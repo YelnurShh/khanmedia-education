@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KhanMedia Education
 
-## Getting Started
+Креативті салалардағы кәсіби білім беру платформасы. Motion Design, Graphic Design, UI/UX Design және басқа да курстар арқылы студенттерге сапалы білім беру.
 
-First, run the development server:
+## 🚀 Мүмкіндіктер
 
+- **Тегін бастапқы сабақтар** - курстардың алғашқы сабақтарын тегін көру
+- **Көптеген курс категориялары** - Motion Design, Graphic Design, UI/UX Design, 3D Modeling, Video Editing, Web Design
+- **Интерактивті дизайн** - Framer Motion анимацияларымен қазіргі заманғы интерфейс
+- **Тіркелу және кіру** - қауіпсіз аутентификация жүйесі
+- **Іздеу және сұрыптау** - курстарды іздеу және әртүрлі критерийлер бойынша сұрыптау
+- **Responsive дизайн** - барлық құрылғыларда жақсы көрінеді
+
+## 🛠 Технологиялар
+
+- **Next.js 14** - React негізіндегі веб-қосымша
+- **TypeScript** - типтік қауіпсіздік
+- **Tailwind CSS** - стильдеу
+- **Framer Motion** - анимациялар
+- **Lucide React** - иконкалар
+- **Headless UI** - құрамдас элементтер
+
+## 📦 Орнату
+
+1. Жобаны клонидаңыз:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd khanmedia-education
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Қажетті пакеттерді орнатыңыз:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Даму серверін іске қосыңыз:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Браузерде ашыңыз: [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 📁 Жоба құрылымы
 
-To learn more about Next.js, take a look at the following resources:
+```
+khanmedia-education/
+├── src/
+│   ├── app/
+│   │   ├── auth/
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx          # Кіру беті
+│   │   │   └── register/
+│   │   │       └── page.tsx          # Тіркелу беті
+│   │   ├── courses/
+│   │   │   └── page.tsx              # Курстар беті
+│   │   ├── layout.tsx                # Негізгі layout
+│   │   └── page.tsx                  # Басты бет
+│   └── ...
+├── public/                           # Статикалық файлдар
+├── package.json
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Беттер
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Басты бет (`/`)
+- Hero секциясы
+- Статистикалар
+- Популярлық курстар
+- Call-to-action секциясы
 
-## Deploy on Vercel
+### Курстар (`/courses`)
+- Барлық курстарды көрсету
+- Іздеу және сұрыптау
+- Категориялар бойынша фильтрлеу
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Кіру (`/auth/login`)
+- Электрондық пошта және құпия сөз
+- "Мені есте сақтау" опциясы
+- Құпия сөзді ұмыту сілтемесі
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Тіркелу (`/auth/register`)
+- Толық ақпарат енгізу
+- Құпия сөз талаптары
+- Шарттарды қабылдау
+
+## 🚀 Production-ге дайындау
+
+```bash
+# Production build жасау
+npm run build
+
+# Production серверін іске қосу
+npm start
+```
+
+## 📱 Responsive дизайн
+
+Сайт барлық құрылғыларда жақсы көрінеді:
+- **Desktop** - толық функционалдылық
+- **Tablet** - адаптивті grid жүйесі
+- **Mobile** - мобильді оңтайландырылған интерфейс
+
+## 🎯 Келесі қадамдар
+
+- [ ] Backend API интеграциясы
+- [ ] Пайдаланушы профилі
+- [ ] Видео оқу платформасы
+- [ ] Төлем жүйесі
+- [ ] Сертификаттар
+- [ ] Мұғалімдер панелі
+- [ ] Студенттер қауымдастығы
+
+## 📄 Лицензия
+
+MIT License
+
+## 👥 Автор
+
+KhanMedia Education Team
+
+---
+
+**Ескерту**: Бұл демо жоба. Нақты қолдану үшін backend API және деректер қоры қажет.
